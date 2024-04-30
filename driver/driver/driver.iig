@@ -1,0 +1,21 @@
+//
+//  driver.iig
+//  driver
+//
+//  Created by Randy Zhu on 2024-04-30.
+//
+
+#ifndef driver_h
+#define driver_h
+
+#include <Availability.h>
+#include <DriverKit/IOService.iig>
+
+class driver: public IOService
+{
+public:
+    virtual kern_return_t
+    Start(IOService * provider) override;
+};
+
+#endif /* driver_h */
